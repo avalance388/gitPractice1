@@ -1,0 +1,35 @@
+[
+	{
+		"id": 1,
+		"tweet": "Hey bae",
+		"usersMentioned": [
+			{
+				"id": 10,
+				"username": "adriaticus_III"
+			}
+		]
+	},
+
+	{
+		"id": 2,
+		"tweet": "Yea Bruh"
+	},
+
+	{
+		"id": 3,
+		"tweet": "sad gey"
+	}
+
+	{
+		"id": 4,
+		"tweet": "Yo",
+		"usersMentioned": [
+			{
+				"id": 10,
+				"username": "adriaticus_III"
+			}
+		]
+	}
+
+
+]

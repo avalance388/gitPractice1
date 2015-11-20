@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Modular Javascript</title>
+		<link href="../../img/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel='stylesheet' href='../../css/js/modular.css'>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+
+	</head>
+
+	<body>
+		<h1>Modular JS - Object Literal Module</h1>
+		<button id="backHome">Back</button>
+		
+
+		<!-- Notes -->
+
+		<p style="display:block;">
+			<strong>Rules/Notes</strong><br>
+		</p>
+		<ul>
+			<li>Self-Contained Module
+				<ul>
+					<li>Everything to do with module is in module</li>
+					<li>No Global Variables </li>
+					<li>If Module manages more than one thing, it should be split up</li>
+				</ul>
+			</li>
+			<li>Separation of concerns</li>
+			<li>DRY code: Don't Repeat Yourself</li>
+			<li>Efficient DOM usage (DOM Caching)
+				<ul>
+					<li>Very few $(selections)</li>
+				</ul>
+			</li>
+			<li>
+				No Memory Leaks
+				<ul>
+					<li>All events can be unbound</li>
+				</ul>
+			</li>
+		</ul>
+
+
+
+
+		<!-- Actual Module Example -->
+
+		<div id="peopleModule">
+            <h1>People</h1>
+            <input placeholder="name" type="text">
+            <button id="addPerson">Add Person</button>
+            <ul id="people">
+                <script id="people-template" type="text/template">
+                    {{#people}}
+                        <li>
+                            <span>{{.}}</span>
+                            <i class="del">X</i>
+                        </li>
+                    {{/people}}
+                </script>
+            </ul>
+
+        </div>
+	</body>
+			<script src="../../js/modularJS.js"></script>
+</html>

@@ -2,8 +2,8 @@ var back = document.getElementById("backHome");
 back.addEventListener("click", goBack);
 
 function goBack(){
-	open("index.html", "_top");
-}
+	open("../../index.html", "_top");
+};
 
 //INTRODUCTION TO ARRAYS AND LOOPS
 /*  

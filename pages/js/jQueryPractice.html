@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Practice 1</title>
+		<link href="../../img/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel="stylesheet" href="../../css/main.css">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="../../js/jQueryPractice.js"></script>
+	</head>
+	
+	<body>
+		<header>
+			<h1>JQuery</h1>
+			<button id="backHome" style="display:block; margin:10px 0px 20px;">Back</button>
+			<button type="button" class="btn btn-default panel-button" data-panelid="panel1">Button 1</button>
+			<button type="button" class="btn btn-default panel-button" data-panelid="panel2">Button 2</button>
+			<button type="button" class="btn btn-default panel-button" data-panelid="panel3">Button 3</button>
+		</header>
+			<br>
+		<main>
+			<div class="col-sm-4">
+				<div id="panel1" class="panel panel-default">
+					<div class="panel-heading">
+						Panel 1
+					</div>
+					<div class="panel-body">
+						Nothin Man
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div id="panel2" class="panel panel-default">
+					<div class="panel-heading">
+						Panel 2
+					</div>
+					<div class="panel-body">
+						Boogerina
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-4">
+				<div id="panel3" class="panel panel-default">
+					<div class="panel-heading">
+						Panel 3
+					</div>
+					<div class="panel-body">
+						Wee Wee Wee
+					</div>
+				</div>
+			</div>
+	
+
+			<!-- DOM Traversal Content -->
+			<div class="col-sm-12" style="display:block">
+				<h2 class="text-muted">DOM Traversal Content</h2>
+				<ul class="list">
+					<li>one</li>
+					<li class="special">two</li>
+					<li>three</li>
+					<li>
+						<ul class="sublist">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		
+			<!-- jQuery Tab Panel Widget -->
+			<div class="col-sm-12">
+				<h2 class="text-muted">jQuery Tab Panel</h2>
+				<div class="tab-panels">
+		            <ul class="tabs">
+		                <li rel="panel11" class="active">panel11</li>
+		                <li rel="panel22">panel22</li>
+		                <li rel="panel33">panel33</li>
+		                <li rel="panel4">panel4</li>
+		            </ul>
+
+		            <div id="panel11" class="panel active">
+		                content1<br/>
+		                content1<br/>
+		                content1<br/>
+		                content1<br/>
+		                content1<br/>
+		            </div>
+		            <div id="panel22" class="panel">
+		                content2<br/>
+		                content2<br/>
+		                content2<br/>
+		                content2<br/>
+		                content2<br/>
+		            </div>
+		            <div id="panel33" class="panel">
+		                content3<br/>
+		                content3<br/>
+		                content3<br/>
+		                content3<br/>
+		                content3<br/>
+		            </div>
+		            <div id="panel4" class="panel">
+		                content4<br/>
+		                content4<br/>
+		                content4<br/>
+		                content4<br/>
+		                content4<br/>
+		            </div>
+		        </div>
+
+
+
+		        <div class="tab-panels">
+		            <ul class="tabs">
+		                <li rel="panel5" class="active">panel5</li>
+		                <li rel="panel6">panel6</li>
+		                <li rel="panel7">panel7</li>
+		                <li rel="panel8">panel8</li>
+		            </ul>
+
+		            <div id="panel5" class="panel active">
+		                content5<br/>
+		                content5<br/>
+		                content5<br/>
+		                content5<br/>
+		                content5<br/>
+		            </div>
+		            <div id="panel6" class="panel">
+		                content6<br/>
+		                content6<br/>
+		                content6<br/>
+		                content6<br/>
+		                content6<br/>
+		            </div>
+		            <div id="panel7" class="panel">
+		                content7<br/>
+		                content7<br/>
+		                content7<br/>
+		                content7<br/>
+		                content7<br/>
+		            </div>
+		            <div id="panel8" class="panel">
+		                content8<br/>
+		                content8<br/>
+		                content8<br/>
+		                content8<br/>
+		                content8<br/>
+		            </div>
+		        </div>
+			</div>
+
+			<div class="col-sm-12" style="display:block">
+				<div class="container">
+		            <div class="header">
+		                <h2 class="text-muted">jQuery Basic Slider</h2>
+		            </div>
+
+		            <div id="slider">
+		                <ul class="slides">
+		                    <li class="slide slide1">slide1</li>
+		                    <li class="slide slide2">slide2</li>
+		                    <li class="slide slide3">slide3</li>
+		                    <li class="slide slide4">slide4</li>
+		                    <li class="slide slide5">slide5</li>
+		                    <li class="slide slide1">slide1</li>
+		                </ul>
+            		</div>
+        		</div>
+			</div>
+		</main>
+	</body>
+</html>

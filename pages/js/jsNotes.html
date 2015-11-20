@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JS Notes</title>
+
+		<link rel="stylesheet" href="../../css/main.css">
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="../../js/jsNotes.js"></script>
+	</head>
+
+	<body>
+		<h1>JavaScript Notes</h1>
+		<button id="backHome" style="display:block; margin:10px 0px 20px;">Back</button>
+		<h2> First Class Functions </h2>
+			<ul><strong>function fName(param1, param2, callback)</strong>
+				<li style="padding-top:5px">Callback Function: Callback is optional and is to pass a function inside another function. </li>
+				<li style="padding-top:5px">and you call it normally ->   callback();</li>
+				<li style="padding-top:5px"> Function is a first class object, basically a variable, to JS it is a variable </li>
+			</ul>
+
+		<h2> Event-Driven Environment </h2>
+			<ul>
+				<li style="padding-top:5px">Event Listener = Waits for certain type of event e.g. button waiting for 'click'</li>
+				<li style="padding-top:5px">Event = actual event (click)</li>
+				<li style="padding-top:5px">Unlike PHP, does not need to rerun to refresh/update page (uses events) </li>
+				<li style="padding-top:5px">Stays in memory and fires when needs to be fired, and fires what's only needed (not whole thing like PHP)</li>
+			</ul>
+
+		<h2> Closures </h2>
+			<button id="buttonA">A</button>
+			<button id="buttonB">B</button>
+			<ul>
+				<li style="padding-top:5px">Saves/Remembers variables (keeps it alive), so can be reused later even when .ready(function()) has already finished running </li>
+				<li style="padding-top:5px">variable is in a closure</li>
+				<li style="padding-top:5px">As long as reference to variable is being used in functions, will be stored in memory</li>
+				<li style="padding-top:5px">Closure: Retains state and scope after executes</li>
+			</ul>
+		<h2> Scope </h2>
+			<li style="padding-top:5px">Scope: Variable Access</li>
+			<li style="padding-top:5px">Polute root scope: When you define var in function without typing 'var', it creates global var automatically</li>
+			<li style="padding-top:5px">"use strict"; &nbsp = One way around Polute root scope</li>
+			<li style="padding-top:5px">Context is still "this", by default function runs in the scope of the object it runs in (sits on)</li>
+		<h2> Context </h2>
+			<li style="padding-top:5px">Context: Value of 'this'</li>
+			<li style="padding-top:5px">3 Methods of changing context: call, apply, bind</li>
+			<li style="padding-top:5px">Set up event listener, runs with context with element that was clicked. So if all li had listener, this corresponds with the specific li selected</li>
+			<li style="padding-top:5px">.find() can find elements or id's within context</li>
+
+		<h3 style="padding-top: 10px"> Context Example </h3>
+			<ul>
+				<li> Clicked <span>0</span> Times </li>
+				<li> Clicked <span>0</span> Times </li>
+				<li> Clicked <span>0</span> Times </li>
+			</ul>
+
+		<h3 style="padding-top: 10px"> Context Example 2 </h3>
+			<p style="text-align:center">
+				<button id="clickme"> Click Me</button>
+				<button id="opendiv"> Open Div</button>
+			</p>
+			<div id="div1" class="hero-unit" style="background:#999;margin-top:10px;font-weight:bold;text-align:center;display:none;">
+				<div class="content">I'm a super-awesome Div</div>
+			</div>
+	</body>
+</html>

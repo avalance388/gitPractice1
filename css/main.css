@@ -1,0 +1,147 @@
+.darkBG{
+	background: #999;
+}
+
+.darkerBG{
+	background: #666;
+}
+
+.darkestBG{
+	background: #333;
+}
+
+.done{
+	text-decoration: line-through;
+}
+
+
+/* JAVASCRIPT SELECTORS */
+.hide{
+	visibility: hidden;
+}
+
+
+
+/* JAVASCRIPT EVENTS */
+body {
+    font-family: "helvetica neue";
+    color: #666;
+    padding: 0 20%;
+}
+
+li input {
+    display: none;
+}
+
+li.edit span {
+    display: none;
+}
+
+li.edit input {
+    display: initial;
+}
+
+
+/* DOM TRANSVERSAL */
+.special{
+    color:blue;
+}
+
+
+/* jQuery Tab Panel Widget */
+
+            body {
+    background: #fafafa;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+
+.tab-panels ul {
+    margin: 0;
+    padding: 0;
+}
+.tab-panels ul li {
+    list-style-type: none;
+    display: inline-block;
+    background: #999;
+    margin: 0;
+    padding: 3px 10px;
+    border-radius: 10px 10px 0 0;
+    color: #fff;
+    font-weight: 200;
+    cursor: pointer;
+
+}
+.tab-panels ul li:hover {
+    color: #fff;
+    background: #666;
+}
+
+.tab-panels ul li.active {
+    color: #fff;
+    background: #666;
+}
+
+.tab-panels .panel {
+    display:none;
+    background: #c9c9c9;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+.tab-panels .panel.active {
+    display:block;
+}
+
+
+/* jQuery Basic Sliders */
+
+#slider {
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}
+
+/* helper css, since we don't have images */
+.slide1 {background: red;}
+.slide2 {background: blue;}
+.slide3 {background: green;}
+.slide4 {background: purple;}
+.slide5 {background: pink;}
+
+
+/* JS Mustache.js Templating */
+ul li .edit{
+    display:none;
+}
+
+ul li.edit .edit{
+    display:initial;
+}
+
+ul li.edit .noedit {
+    display:none;
+}
+
+
+/* JS Context */
+
+.active{
+    background-color: green;
+}

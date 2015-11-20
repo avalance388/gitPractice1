@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Ajax tutorial</title>
+		<link href="../../img/favicon.ico" rel="icon" type="image/x-icon" />
+		<link rel='stylesheet' href='../../css/main.css'>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="../../js/ajaxPractice.js"></script>
+
+	</head>
+
+	<body>
+		<h1>jQuery Ajax Tutorial</h1>
+		<button id="backHome">Back</button>
+		<p style="display:block;">
+			<strong>Notes</strong><br>
+			Ajax: Asynchronous Javascript And XML (JSON) <br>
+			Use JSON/XML <br>
+			Get stuff from server <br>
+
+			<br>
+			API: Application Programming Interface <br>
+			Database in structure to handle the orders<br>
+			Give us methods to access the orders and for posting orders 
+
+		</p>
+
+		<h2>Coffee Orders</h2>
+		
+		<ul id='orders'>
+			
+			<template id="order-template">		
+				<li style='background-color:#C0C0C0; list-style:none; padding-left:5px;' data-id="{{id}}">
+					<p>
+						<strong>Name:</strong> 
+						<span class='noedit name'>{{name}}</span>
+						<input class="edit name">
+					</p>
+					<p>
+						<strong>Drink:</strong> 
+						<span class="noedit drink">{{id}}</span>
+						<input class="edit drink">
+					</p>
+
+					<button data-id='{{id}}' class='editOrder noedit'>Edit</button>
+					<button data-id='{{id}}' class='saveEdit edit'>Save</button>
+					<button data-id='{{id}}' class='cancelEdit edit'>Cancel</button>
+					<button data-id='{{id}}' class='remove'>Delete</button>
+				</li>
+			</template>
+
+
+			<template id="order-template1">
+				<li style='background-color:#C0C0C0; list-style:none; padding-left:5px;' data-id="{{id}}">
+					<p>
+						<strong>Name:</strong> 
+						<span class="noedit name">{{name}}</span>
+						<input class="edit name">
+					</p>
+					<p>
+						<strong>Drink:</strong> 
+						<span class="noedit drink">{{age}}</span>
+						<input class="edit drink">
+					</p>
+
+					<button data-id='{{id}}' class='editOrder noedit'>Edit</button>
+					<button data-id='{{id}}' class='saveEdit edit'>Save</button>
+					<button data-id='{{id}}' class='cancelEdit edit'>Cancel</button>
+					<button data-id='{{id}}' class='remove'>Delete</button>
+				</li>
+			</template>
+		</ul>
+
+
+
+		<h4> Add a Coffee Order </h4>
+		<p>name: <input type='text' id='name'></p>
+		<p>drink: <input type='text' id='drink'></p>
+		<button id='add-order'> Add! </button>
+	</body>
+</html>
